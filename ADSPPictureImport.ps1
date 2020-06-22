@@ -2,11 +2,7 @@
 .SYNOPSIS
 	A script to import profile pictures from Active Directory to SharePoint User Profile Service.
 
-.DESCRIPTION
-	This is a PowerShell script that will work on SharePoint 2013 or SharePoint 2016 so you can use Active Directory Import and this script to get your pictures sync'd.
-	This assumes that the profiles are populated.
-
-.PARAMETER DomainDn
+.PARAMETER DomainDN
 	Distinguished domain name e.g. DC=contoso,DC=com.
 
 .PARAMETER DomainController
