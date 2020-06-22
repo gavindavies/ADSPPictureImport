@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-	A PowerShell script to import profile pictures from Active Directory to SharePoint User Profile Service.
+	A PowerShell script to import profile pictures from Active Directory to the SharePoint User Profile Service.
 
 .PARAMETER DomainDN
 	Distinguished domain name e.g. DC=contoso,DC=com.
