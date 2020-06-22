@@ -1,5 +1,5 @@
 # ADSPPictureImport
-A PowerShell script to import profile pictures from Active Directory to SharePoint User Profile Service.
+A PowerShell script to import profile pictures from Active Directory to the SharePoint User Profile Service.
 If AD user has no SharePoint profile, adding '-CreateUserProfile' will create one and update the PictureUrl.
 
  DomainDN - Distinguished domain name e.g. DC=contoso,DC=com.
