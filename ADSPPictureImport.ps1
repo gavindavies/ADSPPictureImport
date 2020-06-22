@@ -48,9 +48,9 @@ Param(
 	[Parameter(Mandatory = $true)]
 	[string]$DomainDN,
 	[string]$DomainController,
-    [string]$MySite,
-    [switch]$EveryUser,
-    [switch]$CreateUserProfile
+    	[string]$MySite,
+    	[switch]$EveryUser,
+    	[switch]$CreateUserProfile
 )
 
 Function DoesUserProfileExist ($User) {
