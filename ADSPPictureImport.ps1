@@ -6,19 +6,19 @@
 	Distinguished domain name e.g. DC=contoso,DC=com.
 
 .PARAMETER DomainController
-    Domain Controller machine name.
+	Domain Controller machine name.
 
 .PARAMETER MySite
-    My site host.
+    	My site host.
 
 .PARAMETER EveryUser
-    If set, every user profile photo will be updated.
+    	If set, every user profile photo will be updated.
 
 .PARAMETER CreateUserProfile
-    If set, a user profile will be created for the AD user if one does not already exist.
+    	If set, a user profile will be created for the AD user if one does not already exist.
 
 .EXAMPLE
-    ./ADSPPictureImport.ps1 -DomainDN "domaindistinguishedname" -DomainController "domaincontrollername" -MySite "http://mysitehost" -EveryUser -CreateUserProfile.
+    	./ADSPPictureImport.ps1 -DomainDN "domaindistinguishedname" -DomainController "domaincontrollername" -MySite "http://mysitehost" -EveryUser -CreateUserProfile.
 
 -----------------------------------------------------------------------------------------------------------------------------------
 Script name : ADSPPictureImport.ps1
@@ -54,7 +54,7 @@ Param(
 )
 
 Function DoesUserProfileExist ($User) {
-    return $ProfileManager.UserExists($User.Properties.userprincipalname)
+    	return $ProfileManager.UserExists($User.Properties.userprincipalname)
 }
 
 Function CreateUserProfile ($User) {
@@ -66,7 +66,7 @@ Function CreateUserProfile ($User) {
 }
 
 Function ADUserHasChanged ($User) {
-    return $User.Properties.whenchanged -gt $(Get-Date).AddHours(-1)
+    	return $User.Properties.whenchanged -gt $(Get-Date).AddHours(-1)
 }
 
 #Obtain the User Profile Manager and Photo Store.
